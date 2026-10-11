@@ -3,3 +3,4 @@ motor
 pymongo
 google-genai
 python-dotenv
+langsmith

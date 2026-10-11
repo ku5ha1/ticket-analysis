@@ -5,7 +5,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 
 MONGO_URI = "mongodb://localhost:27017"
 DB_NAME = "tickets_db"
-COLLECTION_NAME = "tickets_tbof"  # Testing with TBOF brand
+COLLECTION_NAME = "tickets_{brand}"
 
 async def run_evaluation():
     # Connect to MongoDB

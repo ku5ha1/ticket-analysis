@@ -2,3 +2,6 @@ data/
 .venv/
 .env
 failed_tickets.txt
+scripts\test_langsmith_connect.py
+langsmith_verified_runs.csv
+scripts\brand_audit.py
