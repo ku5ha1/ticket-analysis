@@ -10,20 +10,5 @@ services:
       - mongo_data:/data/db
     restart: unless-stopped
 
-  ollama:
-    image: ollama/ollama:latest
-    container_name: local_ollama
-    ports:
-      - "11434:11434"
-    volumes:
-      - ollama_data:/root/.ollama
-    restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
-      interval: 5s
-      timeout: 5s
-      retries: 10
-
 volumes:
   mongo_data:
-  ollama_data:
