@@ -1,2 +1,4 @@
 data/
 .venv/
+.env
+failed_tickets.txt
